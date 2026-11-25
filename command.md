@@ -6,6 +6,8 @@ python -c "import torch; print('PyTorch:', torch.__version__); print('CUDA:', to
 
 python -c "import cupy as cp; print('CuPy:', cp.__version__); print('GPU:', cp.cuda.runtime.getDeviceProperties(0)['name'])"
 
+python classification.py --data_dir dataset --output_dir results --max_train_samples 4000
+
 python gpu_classification.py --data_dir dataset --output_dir results --max_train_samples 4000
 
 python gpu_classification.py --data_dir dataset --output_dir results --max_train_samples 8000
